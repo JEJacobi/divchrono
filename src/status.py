@@ -1,20 +1,17 @@
-"""
-Module for setting the states of status LEDs.
+"""Module for setting the states of status LEDs.
 
-Uses PRi.GPIO, pins, time, atexit
+Uses PRi.GPIO, pins, time
 
 leds[]: Names of each LED, ordered.
 states{}: Names of each LED and its current desired state, unordered.
 
 init(): initalizes everything.
 update(p): Outputs current desired LED set state to hardware.
-destroy(): Clean up.
 """
 
 import RPi.GPIO as GPIO
 import pins
 import time
-import atexit
 
 leds = [ # LED names, in physical order.
     'pwr',
@@ -30,20 +27,12 @@ leds = [ # LED names, in physical order.
 states = {} # Name and current desired value of each LED.
 
 def init():
-    """Initializes LED current state dict and GPIO interface based off settings in pins module."""
-    GPIO.setwarnings(False)
-    GPIO.setmode(pins.mode)
-
-    for x in pins.outputs:
-        GPIO.setup(x, GPIO.OUT)
-
-    for led in leds: # Default all LED states to on.
+    """Initializes LED current state dict and sets LEDs to on by default."""
+    for led in leds:
         states[led] = 1
 
-    atexit.register(destroy) # Make sure destroy() runs on exit. 
-
 def update(p = 0.000001):
-    """
+    """ 
     Output LED settings from states{} to shift register.
 
     Argument is time to wait in seconds between actions, 0.000001 by default.
@@ -66,8 +55,3 @@ def update(p = 0.000001):
     time.sleep(p)
     GPIO.output(latch, 1) # Pulse latch
     time.sleep(p)
-
-def destroy():
-    """Clean up, stop using GPIO pins."""
-    print("Bye!")
-    GPIO.cleanup()
