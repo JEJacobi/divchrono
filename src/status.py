@@ -50,8 +50,10 @@ def update(p = 0.000001):
         GPIO.output(clock, 0) # Unset clock 
         time.sleep(p)
         GPIO.output(clock, 1) # Pulse clock
+
     time.sleep(p)
     GPIO.output(latch, 0) # Unset latch
     time.sleep(p)
     GPIO.output(latch, 1) # Pulse latch
     time.sleep(p)
+
