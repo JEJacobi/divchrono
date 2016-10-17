@@ -1543,11 +1543,11 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" package="C1206" value="100nF" x="16.51" y="3.81" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="1.905" size="1.27" layer="25"/>
+<attribute name="NAME" x="12.7" y="1.905" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.05" y="2.54" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="J1" library="pinhead" package="2X03" value="" x="22.225" y="3.81" smashed="yes">
-<attribute name="NAME" x="27.305" y="1.905" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="27.305" y="1.905" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="18.415" y="-0.635" size="1.27" layer="27"/>
 </element>
 <element name="U1" library="Texas Instruments_By_element14_Batch_1" package="SOIC127P600X175-16N" value="SN74HC148D" x="26.67" y="16.51" smashed="yes" rot="R90">
@@ -1556,44 +1556,44 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER" value="Texas Instruments" x="26.67" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN74HC148D" x="26.67" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="35K0804" x="26.67" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="28.3972" y="11.0744" size="2.0828" layer="25" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="28.3972" y="11.0744" size="2.0828" layer="25" font="vector" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="30.3276" y="8.5852" size="2.0828" layer="27" ratio="10" rot="SR90"/>
 </element>
 <element name="C2" library="rcl" package="C1206" value="100nF" x="11.43" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.89" y="18.415" size="1.27" layer="25"/>
+<attribute name="NAME" x="8.89" y="18.415" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="12.7" y="19.05" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R1" library="rcl" package="R1206" value="1M" x="31.75" y="17.145" smashed="yes">
-<attribute name="NAME" x="32.385" y="13.97" size="1.27" layer="25"/>
+<attribute name="NAME" x="32.385" y="13.97" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="30.48" y="14.605" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="rcl" package="R1206" value="1M" x="34.925" y="36.83" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.83" y="34.29" size="1.27" layer="25"/>
+<attribute name="NAME" x="36.83" y="34.29" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="37.465" y="35.56" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R3" library="rcl" package="R1206" value="1M" x="31.75" y="20.955" smashed="yes">
-<attribute name="NAME" x="29.21" y="22.86" size="1.27" layer="25"/>
+<attribute name="NAME" x="29.21" y="22.86" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="30.48" y="18.415" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="rcl" package="R1206" value="1M" x="17.78" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.32" y="23.495" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="20.32" y="23.495" size="1.27" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="19.05" y="22.86" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R5" library="rcl" package="R1206" value="1M" x="10.16" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.795" y="6.985" size="1.27" layer="25"/>
+<attribute name="NAME" x="10.795" y="6.985" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.43" y="12.7" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R6" library="rcl" package="R1206" value="1M" x="9.525" y="36.83" smashed="yes" rot="R90">
-<attribute name="NAME" x="7.62" y="35.56" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="7.62" y="35.56" size="1.27" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="12.065" y="35.56" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R7" library="rcl" package="R1206" value="1M" x="15.875" y="28.575" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.685" y="29.21" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="19.685" y="29.21" size="1.27" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="18.415" y="27.305" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="S1" library="divchrono" package="CKN10616" value="CKN10616" x="22.225" y="28.575" smashed="yes" rot="MR180">
-<attribute name="NAME" x="8.255" y="42.545" size="1.27" layer="22" rot="MR180"/>
-<attribute name="VALUE" x="28.575" y="42.545" size="1.27" layer="22" rot="MR180"/>
+<attribute name="NAME" x="8.255" y="42.545" size="1.27" layer="22" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="28.575" y="42.545" size="1.27" layer="22" font="vector" rot="MR180"/>
 </element>
 </elements>
 <signals>
