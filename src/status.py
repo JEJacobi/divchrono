@@ -1,6 +1,6 @@
 """Module for setting the states of status LEDs.
 
-Uses PRi.GPIO, pins, time
+Uses RPi.GPIO, pins, time
 
 leds[]: Names of each LED, ordered.
 states{}: Names of each LED and its current desired state, unordered.
@@ -30,6 +30,8 @@ def init():
     """Initializes LED current state dict and sets LEDs to on by default."""
     for led in leds:
         states[led] = 1
+
+    update()
 
 def update(p = 0.000001):
     """ 
