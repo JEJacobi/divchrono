@@ -4,9 +4,6 @@ Uses RPi.GPIO, pins, time
 
 leds[]: Names of each LED, ordered.
 states{}: Names of each LED and its current desired state, unordered.
-
-init(): initalizes everything.
-update(p): Outputs current desired LED set state to hardware.
 """
 
 import RPi.GPIO as GPIO
@@ -27,7 +24,14 @@ leds = [ # LED names, in physical order.
 states = {} # Name and current desired value of each LED.
 
 def init():
-    """Initializes LED current state dict and sets LEDs to on by default."""
+    """Initialize LED current state dict and set LEDs to off by default."""
+    for led in leds:
+        states[led] = 0
+
+    update()
+
+def destroy():
+    """Clean up after status display, and set all LEDs to on."""
     for led in leds:
         states[led] = 1
 

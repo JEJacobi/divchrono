@@ -1,15 +1,15 @@
-"""Module for reading the state of the encoder board.
+"""
+Module for reading the state of the encoder board.
 
 Uses RPi.GPIO, pins
-
-getpos(): Returns the current state of the encoder board, from 0-6. Returns None if the encoder is in transit or if the data is invalid.
-
 """
 
 import RPi.GPIO as GPIO
 import pins
 
 def getpos():
+    """Return the current position of the encoder board, from 0-6, or None if in transit."""
+
     d1 = GPIO.input(pins.encoder_d1)
     d2 = GPIO.input(pins.encoder_d2)
     d3 = GPIO.input(pins.encoder_d3)

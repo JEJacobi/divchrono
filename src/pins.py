@@ -1,4 +1,5 @@
-"""Module for handling GPIO pin setup and settings.
+"""
+Module for handling GPIO pin setup and settings.
 
 Uses RPi.GPIO
 """
