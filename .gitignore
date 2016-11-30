@@ -2,6 +2,7 @@
 
 audio/*
 !audio/DUMMY
+!audio/default
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
